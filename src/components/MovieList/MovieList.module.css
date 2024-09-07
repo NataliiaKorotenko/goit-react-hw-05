@@ -1,0 +1,18 @@
+.movieItem {
+    list-style: none;
+    text-align: left; 
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.title {
+    padding: 3px 0;
+    font-size: 18px;
+    color: rgb(85,107,47);
+  }
+
+  .movieIcon{
+    padding: 0;
+    display: flex;
+    align-items: center; 
+  }

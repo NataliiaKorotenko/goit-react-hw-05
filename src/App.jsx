@@ -1,20 +1,30 @@
 import { Route, Routes } from "react-router-dom";
-import { useState } from 'react'
+import { lazy, Suspense } from 'react';
 
-import './App.css'
+import './App.css';
+import Loader from "./components/Loader/Loader";
+
+const Navigation = lazy(() => import("./components/Navigation/Navigation"));
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 
 function App() {
-  
   return (
-    
-   <div>
-    <h1>react</h1>
-    <Routes>
-
-    </Routes>
-  </div>
-
+    <div>
+      <Suspense fallback={<Loader />}>
+        <Navigation />
+      </Suspense>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Suspense fallback={<Loader />}>
+              <HomePage />
+            </Suspense>
+          }
+        />
+      </Routes>
+    </div>
   );
 }
 
-export default App
+export default App;

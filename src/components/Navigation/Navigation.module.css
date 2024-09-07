@@ -1,0 +1,47 @@
+.header {
+    border-bottom: 1px solid rgb(0,100,0);
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 4px;
+    background: #4fa94d;
+    z-index: -1;
+}
+
+.navList{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+
+.navLink{
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0,100,0);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: var(--animation-cubicBezier);
+    
+   
+}
+
+.navLink:focus{
+    color: rgb(124,252,0);
+    background-color: rgb(245,255,250);
+    padding: 8px;
+    border-radius: 3px solid;
+}
+
+.navLink:hover{
+    color: rgb(128,128,0);
+}

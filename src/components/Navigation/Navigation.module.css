@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.nav{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .header::after {
     content: "";
     position: absolute;

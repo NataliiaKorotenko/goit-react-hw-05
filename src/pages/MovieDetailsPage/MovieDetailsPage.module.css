@@ -1,0 +1,55 @@
+.listDetPage{     
+    list-style: none;
+    text-align: left; 
+    margin-left: 0;
+    padding-left: 0;
+    display: block;
+    margin:  25px;
+    padding: 10px;
+}
+
+.titleMovieDetai{
+    list-style: none;
+    color: rgb(0,100,0);
+}
+
+.additionalInfo{
+    list-style: none;
+    text-align: left; 
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+
+}
+
+.linkMovieDetails{
+    list-style: none;
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0,100,0);
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: var(--animation-cubicBezier);
+}
+
+.linkMovieDetails:focus{
+    color: rgb(124,252,0);
+    background-color: rgb(245,255,250);
+    padding: 8px;
+    border-radius: 3px solid;
+}
+
+.linkMovieDetails:hover{
+    color: rgb(128,128,0);
+}
+
+.additionalInfo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 4px;
+    background: #4fa94d;
+    z-index: -1;
+}

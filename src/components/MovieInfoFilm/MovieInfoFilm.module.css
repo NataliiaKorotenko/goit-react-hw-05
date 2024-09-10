@@ -1,0 +1,14 @@
+.infoList{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.infoItem{
+        display: block;       
+        margin-bottom: 20px;
+        text-align: left; 
+        font-size: 20px;
+        text-align: justify;
+        
+}

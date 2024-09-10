@@ -1,0 +1,29 @@
+.btnGoBack{
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    font-size: 16px;
+    background-color:  rgb(245, 255, 250);
+    color: rgb(0, 100, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnGoBack:hover {
+    background-color: rgb(0, 100, 0);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+
+  .btnGoBack:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .textGoBack{
+   color: rgb(0, 100, 0);
+   font-size: 22px;
+  }

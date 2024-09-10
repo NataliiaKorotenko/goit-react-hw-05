@@ -1,0 +1,11 @@
+.listReviews{
+    list-style: none;
+    display: block;
+    margin-bottom: 15px;
+    color: rgb(0,100,0);
+    font-size: 18px;
+}
+
+.itemReviews{
+    text-align: justify;
+}

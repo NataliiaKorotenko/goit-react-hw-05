@@ -6,7 +6,7 @@ export default function MovieInfoFilm({ movie }) {
   
   return (
     <div className={css.infoList}>
-      <img src={baseUrl + backdrop_path} alt={title} />  
+      <img className={css.infoImg} src={baseUrl + backdrop_path} alt={title} />  
       <div className={css.infoItem}>
         <h2>{title}</h2>
         <p>User score: {vote_average} %</p>

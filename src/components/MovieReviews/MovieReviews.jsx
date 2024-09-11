@@ -27,7 +27,7 @@ export default function MovieReviews() {
   }, [movieId]);
 
   if (movieReviews.length === 0) {
-    return <p>There are no reviews yet</p>;
+    return <p>We don't have any for this reviews</p>;
   } else {
     return (
       <>

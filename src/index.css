@@ -21,11 +21,9 @@ a {
 
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 h1 {
@@ -34,9 +32,10 @@ h1 {
 }
 
 img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
 button {
   border-radius: 8px ;

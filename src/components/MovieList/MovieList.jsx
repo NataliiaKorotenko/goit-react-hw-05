@@ -7,7 +7,6 @@ const MovieList = ({ movies }) => {
 
   return (
     <div>
-      <h1 className={css.titleTreding}>Trending today</h1>
       <ul className={css.movieItem}>
         {movies.map(({ id, title }) => {
           return (

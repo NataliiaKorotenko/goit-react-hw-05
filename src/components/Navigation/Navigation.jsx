@@ -4,7 +4,6 @@ import css from '../Navigation/Navigation.module.css';
 export default function Navigation() {
     return (
         <header className={css.header}>
-    
             <nav className={css.nav}>
                 <ul className={css.navList}>
                     <li className={css.navItem}>

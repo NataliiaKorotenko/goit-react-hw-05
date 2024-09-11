@@ -12,3 +12,9 @@
         text-align: justify;
         
 }
+
+.infoImg{
+    display: block;
+    height: auto;
+    width: 100%;
+}

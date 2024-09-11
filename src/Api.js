@@ -13,8 +13,11 @@ export const fetchTrendingMovies = async () => {
   return response.data;
 };
 
-export const fetchTrendingQuery = async (query) => {
-  const response = await axios.get(`search/movie?query=${query}`, options);
+export const fetchMovieByQuery = async (query) => {
+  const response = await axios.get(
+    `search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
+    options
+  );
   return response.data;
 };
 

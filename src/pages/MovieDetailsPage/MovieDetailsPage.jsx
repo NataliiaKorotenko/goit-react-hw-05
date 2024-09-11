@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useParams, Outlet, Link } from "react-router-dom";
+import { useParams, Outlet, Link, useLocation } from "react-router-dom";
 import { fetchMovieDetails } from "../../Api";
 import Loader from '../../components/Loader/Loader.jsx';
 import GoBack from '../../components/GoBack/GoBack.jsx';
@@ -11,7 +11,8 @@ export default function MovieDetailsPage() {
   const [movieDetails, setMovieDetails] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const goBackRef = useRef('/'); 
+  const location = useLocation(); 
+  const goBackRef = useRef(location.state?.from || '/'); 
 
   useEffect(() => {
     const getMovieDetails = async () => {
